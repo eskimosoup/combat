@@ -1,0 +1,61 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Page 1
+  button_text: Page 1
+  body: Lorem
+  picture1_id: 0
+  display: true
+  controller: web
+  action: content1
+  last_updated: 2008-07-28 12:13:33
+  updated_by: unknown
+  created_by: unknown
+
+two:
+  name: Page 2
+  button_text: Page 2
+  body: Lorem
+  picture1_id: 0
+  display: true
+  controller: web
+  action: content2
+  last_updated: 2008-07-28 12:13:33
+  updated_by: unknown
+  created_by: unknown
+
+three:
+  name: Page 3
+  button_text: Page 3
+  body: Lorem
+  picture1_id: 0
+  display: true
+  controller: web
+  action: content3
+  last_updated: 2008-07-28 12:13:33
+  updated_by: unknown
+  created_by: unknown
+
+four:
+  name: Page 4
+  button_text: Page 4
+  body: Lorem
+  picture1_id: 0
+  display: true
+  controller: web
+  action: content4
+  last_updated: 2008-07-28 12:13:33
+  updated_by: unknown
+  created_by: unknown
+
+five:
+  name: Page 5
+  button_text: Page 5
+  body: Lorem
+  picture1_id: 0
+  display: true
+  controller: web
+  action: content5
+  last_updated: 2008-07-28 12:13:33
+  updated_by: unknown
+  created_by: unknown

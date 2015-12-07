@@ -1,0 +1,10 @@
+Script started on Fri May 23 13:43:16 2008
+
+OOPS! Did you mean to source this script? Try this:
+
+    source ~/.ssh/agent.sh
+
+ssh agent found
+FARMOSX:~/rails/tp2 robbie$ exit
+
+Script done on Fri May 23 13:43:16 2008

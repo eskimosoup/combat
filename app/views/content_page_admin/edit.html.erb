@@ -1,0 +1,5 @@
+<h1><%= @page_title = "Update Content Page" -%></h1>
+<% render :partial => "subnav" %>
+
+      <%= error_messages_for :content_page %>
+      <%= render :partial => 'form', :locals => {:content_page => @content_page} %>

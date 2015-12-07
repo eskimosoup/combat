@@ -1,0 +1,6 @@
+<% @page_title = "Update  Admin" -%>
+<% render :partial => "admin_subnav" %>
+      <p>To add a new Admin simply complete the form below.</p>
+      <%= error_messages_for :admin %>
+      <div class="clear"></div>
+      <%= render :partial => 'admin_form', :locals => {:admin => @admin} %>

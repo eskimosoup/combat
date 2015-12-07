@@ -1,0 +1,9 @@
+  <% if @content_page.has_picture1? %>
+    <%= thumbnail_tag @content_page.picture1, :border=>"0", :width=>"288" %>
+  <% else %>
+    <% if File.exists?("#{RAILS_ROOT}/public/images/default_image.jpg") %>
+      <%= image_tag "default_image.jpg", :width=>"288", :border => "0" %>
+    <% end %>
+  <% end %>
+  <h1><%= @page_title %></h1>
+  <%= @content_page.body %>

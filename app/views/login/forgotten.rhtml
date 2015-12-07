@@ -1,0 +1,15 @@
+<% @page_title = "Enter Your Adminname" %>
+
+  <p>
+    Please enter your adminname below and we will send you a new password.
+  </p>
+  <%= form_tag %>
+    <p>
+      <label for="admin_name">Adminname</label>
+      <%= text_field('admin', 'name')%>
+    </p>
+    <p>
+      <%= submit_tag "Send", :class => 'button' %>
+    </p>
+  </form>
+  <p><%= link_to image_tag("admin/button_back.gif", :border => "0", :alt => "Back", :align => "middle")+ '', :action => 'login' %> Go back to the login page </p>

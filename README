@@ -1,0 +1,7 @@
+web layout is set in the config/site_settings.yml file. It is loaded from an initializer in initializers/site_settings.rb
+
+dynamic module name is set unfortunately in two places:
+config/site_settings.yml
+config/admin_navigation.yml
+
+Be careful with the admin navigation file, because if it isn't well formed it will break the whole admin.

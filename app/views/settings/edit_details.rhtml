@@ -1,0 +1,39 @@
+<h1><%= @page_title = "Edit Details" -%></h1>
+<% @page_type = "Contact" -%>
+      <p>These details are used on the site so please make sure they are kept up-to-date.</p>
+      <% form_for(@site_profile, :url => {}, :html => {:method => "post"}) do |f| %>
+
+        <p>
+          <%= f.label :company_name %>
+          <%= f.text_field :company_name %>
+        </p>
+
+        <p>
+          <%= f.label :address %>
+          <%= f.text_area :address, :class => "summary" %>
+        </p>
+
+        <p>
+          <%= f.label :phone_number %>
+          <%= f.text_field :phone_number %>
+        </p>
+
+        <p>
+          <%= f.label :fax_number %>
+          <%= f.text_field :fax_number %>
+        </p>
+
+        <p>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
+        </p>
+
+        <!-- <p> -->
+        <!--   <%= f.label :geocode %> -->
+        <!--   <%= f.text_field :geocode %> -->
+        <!-- </p> -->
+
+        <p>
+          <%= submit_tag "Update", :class => 'submit' %>
+        </p>
+      <% end %>

@@ -1,0 +1,26 @@
+<%% @page_title = "View All <%= print_name.pluralize %>" -%>
+
+          <p>Below is a list of all the <%= print_name.pluralize %> in this system. From here you can edit or delete a particular <%= print_name %>.</p>
+      <div class="clear"></div>
+<%% form_tag({}, :method => "GET") do %>
+<p>
+  <%%= text_field_tag(:search, (session[@list_name] || {})[:search]) %>
+  <br />
+  <%%= submit_tag 'Search', :class => 'submit' %>
+</p>
+<%% end %>
+<%% if @<%= file_name %>_pages.count != 0 -%>
+
+  <%%= admin_table({:columns =>[:name, :last_updated],
+    :list => @<%= file_name.pluralize %>,
+    :pages => @<%= file_name %>_pages
+  })%>
+
+<%% else -%>
+
+  There are currently no <%= print_name.pluralize %> in the system.
+
+<%% end -%>
+
+
+

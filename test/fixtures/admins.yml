@@ -1,0 +1,14 @@
+---
+tmedia_admin:
+  salt:
+  name: tmedia
+  updated_at: 2008-06-05 14:59:32
+  hashed_password: 27e32315ad490297b1ec61cdbc46e1197939032b
+  created_by: Unknown
+  remember_token_expires_at:
+  updated_by: Unknown
+  id: "1"
+  last_updated: 2008-06-05 13:59:32
+  remember_token:
+  created_at: 2008-06-05 14:59:32
+  email: info@tmedia.co.uk

@@ -1,0 +1,9 @@
+---
+features_001:
+  name: All
+  id: "1"
+  controller: all
+features_002:
+  name: Settings
+  id: "2"
+  controller: settings

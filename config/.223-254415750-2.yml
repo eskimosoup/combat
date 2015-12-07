@@ -1,0 +1,7 @@
+layout: 3
+dynamic_modules:
+  one:
+    button_text: Articles
+    singular: Article
+    plural: Articles
+

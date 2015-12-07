@@ -1,0 +1,28 @@
+<% @page_title = "Content Page" %>
+
+<% for content_page in @content_pages %>
+<div>
+
+<%= link_to content_page.name, :action => 'show', :id => content_page %><br />
+
+
+
+
+
+
+
+</div>
+<% end %>
+
+<% if @content_page_pages.count != 0 %>
+  <div class="pagecount">
+    <% if @content_page_pages.previous_page -%>
+      <%= link_with_params '&lt;&lt; Back', :action => 'list', :page => @content_page_pages.previous_page %>
+    <% end -%>
+    <%= @content_page_pages.range %> of <%= @content_page_pages.count %>
+    <% if @content_page_pages.next_page -%>
+      <%= link_with_params 'Next &gt;&gt;', :action => 'list', :page => @content_page_pages.next_page %>
+    <% end -%>
+  </div>
+<% end %>
+

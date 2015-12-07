@@ -1,0 +1,58 @@
+<% form_for(article, :url => {}, :html => {:method => "post", :multipart => true}) do |e| %>
+<% f = TmediaForm.new(e, article) %>
+
+
+
+  <p>
+    <%= f.label :name %>
+    
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :tags, "Categories" %>
+    
+    <%= f.tag_field :tags %>
+  </p>
+
+
+  <p>
+    <%= f.label :summary %>
+    
+    <%= f.summary_text_area :summary %>
+  </p>
+
+
+  <% @include_tinymce_script = true %>
+  
+  <p>
+    <%= f.label :body %>
+    
+    <%= f.tinymce_text_area :body %>
+  </p>
+
+
+  <p>
+    <%= f.label :article_date, "Date" %><br />
+    
+    <%= f.t_date_select :article_date %>
+  </p>
+
+
+    <%= f.comprehensive_image_field :picture1_id %>
+
+
+  <p>
+    <%= f.label :display %>
+    
+    <%= f.check_box :display %>
+  </p>
+
+  <p>
+    <% if article.new_record? %>
+    <%= e.submit "Create", :class => 'submit' %>
+    <% else %>
+    <%= e.submit "Update", :class => 'submit' %>
+    <% end %>
+  </p>
+<% end %>

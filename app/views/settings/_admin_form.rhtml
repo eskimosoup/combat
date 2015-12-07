@@ -1,0 +1,45 @@
+<% form_for(admin, :url => {}, :html => {:method => "post"}) do |f| %>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :password2, "Confirm" %>
+    <%= f.text_field :password2 %>
+  </p>
+
+<% if 1==2 %>
+  <p>Check the boxes below to allow the user to access those modules.</p>
+
+  <% for feature in Feature.find(:all) %>
+  <p>
+    <%= check_box_tag "admin[feature_ids][]", feature.id, admin.features.include?(feature), :class => "checkbox"%>
+    <%= feature.name %>
+  </p>
+  <% end %>
+
+  <p>*Giving a user access to this will allow them to change their own details and add new users.</p>
+<% else %>
+<input type="hidden" id="admin[feature_ids][]" name="admin[feature_ids][]" value="1">
+<% end %>
+
+  <p>
+    <% if admin.new_record? %>
+    <%= f.submit "Create", :class => 'submit' %>
+    <% else %>
+    <%= f.submit "Update", :class => 'submit' %>
+    <% end %>
+  </p>
+<% end %>

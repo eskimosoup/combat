@@ -1,0 +1,12 @@
+
+- link: {title: Listings Pages, class: listings}
+  list: - link: {title: Article, controller: article_admin, action: index}
+          list: - {title: See All, controller: article_admin, action: list}
+                - {title: Add New, controller: article_admin, action: new}
+#[NEWFEATURESUBNAV]
+- link: {title: Content Pages, class: content}
+  list: - link: {title: See All, controller: content_page_admin, action: list}
+
+- link: {title: Contact Form, class: contact}
+  list: - link: {title: Edit Details, controller: settings, action: edit_details}
+

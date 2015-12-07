@@ -1,0 +1,23 @@
+<h1><%= @page_title = "View All Admin Users" -%></h1>
+<% render :partial => "admin_subnav" %>
+
+<p><%= link_to 'Add User', :action => 'new_admin' %></p>
+
+<% if @admin_pages.count != 0 -%>
+
+  <%= admin_table({:columns =>[:name, :email, :last_updated],
+    :list => @admins,
+    :list_action => 'list_admins',
+    :edit_action => 'edit_admin',
+    :delete_action => 'delete_admin',
+    :pages => @admin_pages
+  })%>
+
+<% else -%>
+
+  There are currently no Admins in the system.
+
+<% end -%>
+
+
+

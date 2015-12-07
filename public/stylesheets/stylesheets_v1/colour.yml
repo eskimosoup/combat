@@ -1,0 +1,67 @@
+#layout all
+* banner height: 118px;
+* top padding: 32px 22px 0px 0px;
+
+main font: 000000;
+main background: 000000;
+internal background: 000000;
+
+footer: 000000;
+footer links: 000000;
+
+footer links rollover: 000000;
+
+header 1: 000000;
+header 2: 000000;
+
+internal link: 000000;
+internal link rollover: 000000;
+
+navigation link: 000000;
+navigation link rollover: 000000;
+top icon link: 000000;
+top icon link rollover: 000000;
+
+horizontal rule: 000000;
+
+bullet points: 000000;
+
+form borders: 000000;
+
+form button colour: 000000;
+
+form button font colour: 000000;
+
+news nav title background: 000000;
+news nav border: 000000;
+news nav links: 000000;
+news nav link rollover: 000000;
+news title: 000000;
+news divide line: 000000;
+news image border: 000000;
+table cell border: 000000;
+
+top line: 000000;
+
+#layout 1
+news background: 000000;
+news bottom line: 000000;
+news dividers: 000000;
+footer top line: 000000;
+
+#layout 2
+
+introduction: 000000;
+news title underline: 000000;
+header 1 underline: 000000;
+
+#layout 3
+news border: 000000;
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+layout: 2
+dynamic_modules:
+  one:
+    button_text: Pests
+    singular: Pests
+    plural: Pests
+

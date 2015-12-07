@@ -1,0 +1,20 @@
+<%% form_for(<%= file_name %>, :url => {}, :html => {:method => "post", :multipart => true}) do |e| %>
+<%% f = TmediaForm.new(e, <%= file_name %>) %>
+
+<% for field in form_fields %>
+    <% if field.field_type == "tinymce_text_area" %>
+      <%% @include_tinymce_script = true %>
+    <% end %>
+  <p>
+    <%%= f.label :<%= field.name %> %>
+    <%%= f.<%= field.field_type %> :<%= field.name %> %>
+  </p>
+<% end %>
+  <p>
+    <%% if <%= file_name %>.new_record? %>
+    <%%= e.submit "Create", :class => 'submit' %>
+    <%% else %>
+    <%%= e.submit "Update", :class => 'submit' %>
+    <%% end %>
+  </p>
+<%% end %>

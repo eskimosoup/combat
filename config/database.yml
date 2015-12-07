@@ -1,0 +1,25 @@
+development:
+  adapter: mysql
+  database: combat_combat
+  host: 192.168.0.122
+  port: 3306
+  username: root
+  password: tmedia
+
+production:
+  adapter: mysql
+  database: combat_combat
+  host: localhost
+  #port: 3306
+  username: combat
+  password: armyman
+
+test:
+  adapter: mysql
+  database: tmedia3c_t2go_working_test
+  host: localhost
+  port: 3306
+  username: root
+  password: tmedia
+
+

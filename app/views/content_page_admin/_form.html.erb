@@ -1,0 +1,33 @@
+<% form_for(content_page, :url => {}, :html => {:method => "post", :multipart => true}) do |e| %>
+<% f = TmediaForm.new(e, content_page) %>
+
+  <p>
+    <%= f.label :button_text %>
+    <%= f.text_field :button_text %>
+  </p>
+
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+      <% @include_tinymce_script = true %>
+
+  <p>
+    <%= f.label :body %>
+    <%= f.tinymce_text_area :body %>
+  </p>
+
+  <p>
+    <%= label_tag 'Image' %>
+    <%= f.comprehensive_image_field :picture1_id %>
+  </p>
+
+  <p>
+    <% if content_page.new_record? %>
+    <%= e.submit "Create", :class => 'submit' %>
+    <% else %>
+    <%= e.submit "Update", :class => 'submit' %>
+    <% end %>
+  </p>
+<% end %>

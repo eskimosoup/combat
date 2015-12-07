@@ -1,0 +1,4 @@
+<% @page_title = "Update Admin" -%>
+<% render :partial => "admin_subnav" %>
+      <%= error_messages_for :admin %>
+      <%= render :partial => 'admin_form', :locals => {:admin => @admin} %>

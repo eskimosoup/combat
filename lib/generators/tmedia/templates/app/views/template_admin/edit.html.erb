@@ -1,0 +1,7 @@
+<%% @page_title = "Update <%= print_name %>" -%>
+<%% render :partial => "subnav" %>
+
+      <p>To update the <%= print_name %> simply complete the form below.</p>
+      <%%= error_messages_for :<%= file_name %> %>
+      <div class="clear"></div>
+      <%%= render :partial => 'form', :locals => {:<%= file_name %> => @<%= file_name %>} %>

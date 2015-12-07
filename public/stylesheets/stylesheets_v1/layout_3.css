@@ -1,0 +1,429 @@
+/* Main */
+body {
+	margin: 2px 0px 10px 0px;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 12px;
+	color: #333333;/*main font*/
+	background-color: #FFFFFF;
+	text-align: center;
+	}
+
+#maincontainer {
+	text-align: left;
+	background-color: #FFFFFF;/*main background*/
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
+	}
+
+#top {
+	margin-right: 1px;
+	border-bottom: 3px solid #EDE9BC;/*top line*/
+	height: 86px; 
+	background-image: url(../images/layout_3/top_bg.jpg); 
+	background-repeat: no-repeat;
+	}
+
+#top div {
+	float: right;
+	display: inline; 
+	text-align: center; 
+	padding: 32px 22px 0px 0px;/*top padding*/
+	}
+
+.logo {
+	margin: 32px 0px 0px 22px; 
+	float: left;
+	}
+
+.content_container {
+	margin-right: 1px; 
+	background-image: url(../images/layout_3/content_top_bg.jpg); 
+	background-repeat: repeat-x; 
+	background-position: top; 
+	padding: 0px 22px 0px 22px;
+	background-color: #FFFFFF;/*internal background*/
+	}
+
+#content {
+	float: right; 
+	width: 488px; 
+	line-height: 17px; 
+	padding: 25px 0px 20px 0px;
+	}
+
+p {
+	margin: 4px 0px 4px 0px; 
+	padding: 4px 0px 4px 0px;
+	}
+
+p.skip {
+	position: absolute; 
+	left: -9999px; 
+	width: 0px; 
+	overflow: hidden;
+	}
+
+.font_grey {
+	color: #666666;
+	}
+
+
+/* Side */
+#side {
+	font-size: 11px; 
+	line-height: 14px; 
+	float: left; 
+	width: 217px; 
+	padding: 25px 0px 0px 0px;
+	}
+
+#side img {
+	float: left; 
+	margin: 3px 10px 0px 0px; 
+	border: 3px solid #42A28B;/*news image border*/
+	}
+
+#side div {
+	border: 1px solid #cccccc;/*news border*/
+	margin-bottom: 25px; 
+	padding: 2px;
+	}
+
+#side div div {
+	border: 0px; 
+	margin: 0px; 
+	padding: 10px;
+	}
+
+#side h2 {
+	border: 1px solid #CCCCCC; 
+	display: block; 
+	color: #42A28B;/*news title */
+	font-size: 16px; 
+	font-weight: bold; 
+	height: 25px!important;height: 37px; 
+	padding: 12px 0px 0px 12px; 
+	margin: 0px;
+	letter-spacing: 0.05em; 
+	}
+
+#side hr {
+	border: 0px; 
+	border-bottom: 1px; 
+	color: #CCCCCC;/*news divide line*/ 
+	border-bottom-style: solid; 
+	height: 0px; 
+	clear: both; 
+	margin: 0px 0px 15px 0px!important; margin: 10px 0px 10px 0px; 
+	padding: 15px 0px 0px 0px!important; padding: 10px 0px 10px 0px;
+	}
+
+
+/* Footer */
+#footer {
+	margin: 0px -22px 0px -22px; 
+	height: 15px!important; height: 55px; 
+	text-align: center; 
+	clear: both; 
+	padding: 40px 0px 0px 0px; 
+	color: #666666;/*footer*/ 
+	background-image: url(../images/layout_3/bottom_bg.jpg); 
+	background-repeat: repeat-x; 
+	background-position: top;
+	}
+
+#footer a:link, #footer a:visited, #footer a:active {
+	color: #666666;/*footer links*/
+	text-decoration: none; 
+	font-weight: normal; 
+	padding: 0px 5px 0px 5px;
+	}
+
+#footer a:hover {
+	color: #666666;/*footer links rollover*/ 
+	text-decoration: underline; 
+	font-weight: normal;
+	}
+
+
+/* Titles */
+h1 {
+	color: #42A28B;/*header 1*/
+	font-size: 20px; 
+	font-weight: bold; 
+	margin: 25px 0px 5px 0px; 
+	padding: 0px 0px 5px 0px; 
+	letter-spacing: 0.05em; 
+	line-height: normal;
+	}
+
+h2 {
+	color: #42A28B;/*header 2*/
+	font-size: 16px; 
+	font-weight: bold; 
+	margin: 6px 0px 2px 0px; 
+	padding: 6px 0px 2px 0px; 
+	line-height: normal;
+	}
+
+
+/* Links */
+a:link, a:visited, a:active {
+	color: #42A28B;/*internal link*/ 
+	text-decoration: none; 
+	font-weight: bold;
+	}
+
+a:hover {
+	color: #477C97;/*internal link rollover*/ 
+	text-decoration: underline; 
+	font-weight: bold;
+	}
+
+#navigation a:link, #navigation a:visited, #navigation a:active {
+	margin: 0px 0px 2px 0px; 
+	display: block; 
+	width: 180px!important; width: 210px; 
+	height: 25px!important;height: 37px; 
+	padding: 12px 0px 0px 30px; 
+	background-image: url(../images/layout_3/button_bg.jpg); 
+	background-repeat: no-repeat; 
+	color: #FFFFFF;/*navigation link*/
+	text-decoration: none; 
+	font-weight: bold; 
+	font-size: 16px;
+	}
+
+#navigation a:hover {
+	background-position: -210px 0px; 
+	color: #FFFFFF;/*navigation link rollover*/
+	text-decoration: none; 
+	font-weight: bold;
+	}
+
+#top a:link, #top a:visited, #top a:active {
+	color: #FFFFFF;/*top icon link*/ 
+	text-decoration: none; 
+	font-weight: bold;
+	}
+
+#top a:hover {
+	color: #FFFFFF;/*top icon link rollover*/ 
+	text-decoration: none; 
+	font-weight: bold;
+	}
+
+
+/* Horizontal Rule */
+hr {
+	border: 0px; 
+	border-bottom: 1px; 
+	color: #CCCCCC;/*horizontal rule*/ 
+	border-bottom-style: solid; 
+	height: 0px; 
+	clear: both; 
+	margin: 0px 0px 10px 0px!important; margin: 0px 0px 0px 0px; 
+	padding: 10px 0px 0px 0px!important; padding: 0px 0px 0px 0px;
+	}
+
+
+/* Bullets */
+ul {
+	color: #BEB08C;/*bullet points*/
+	font-size: 16px; 
+	list-style-type: none; 
+	margin: 14px 0px 14px 0px; 
+	padding: 0px 0px 0px 0px;
+	}
+
+li {
+	margin: 0px 0px 5px 0px; 
+	padding: 0px 0px 5px 30px; 
+	background-image: url(../images/layout_3/bullet.gif); 
+	background-repeat: no-repeat; 
+	background-position: 0px 3px;
+	}
+
+
+/* Forms */
+form {
+	padding: 0px; 
+	margin: 15px 0px 0px 0px;
+	}
+
+form p {
+	margin: 3px 0px 3px 0px; 
+	padding: 0px;
+	}
+
+form p label {
+	float: left; 
+	width: 80px; font-weight: bold;
+	}
+
+form input {
+	font-size: 11px; 
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border: 1px solid #999999;/*form borders*/ 
+	width: 350px;
+	}
+
+form textarea {
+	font-size: 11px; 
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border: 1px solid #999999;/*form borders*/  
+	width: 350px; 
+	height: 150px; 
+	font-family: Tahoma, Arial, sans-serif; 
+	font-size: 12px;
+	}
+
+form select {
+	background-color: #FFFFFF; 
+	border: 1px solid #999999;/*form borders*/  
+	font-size: 10px;
+	}
+
+fieldset {
+	border: 1px solid #999999;/*form borders*/  
+	padding: 10px; 
+	position: relative; 
+	margin-bottom: 10px;
+	}
+
+legend {
+	padding: 2px 3px 2px 3px; 
+	border: 1px solid #999999;/*form borders*/  
+	background-color: #333333;
+	}
+
+form input.checkbox {
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border: 0px; 
+	width: 14px;
+	}
+
+form input.radio {
+	color: #333333; 
+	background-color: #FFFFFF; 
+	border: 0px; 
+	width: 14px;
+	}
+
+form input.submit {
+	width: 60px; 
+	margin-left: 80px; 
+	color: #FFFFFF;/*form button font colour*/
+	background-color: #999999;/*form button colour*/ 
+	border: 1px solid #999999;/*form borders*/  
+	padding: 1px 5px 1px 5px; 
+	font-size: 12px; 
+	font-weight: bold;
+	}
+
+
+/* News Layout */
+.news_title {
+	font-weight: bold; 
+	background-color: #E5E5E5;/*news nav title background*/ 
+	padding: 3px 5px 3px 5px; 
+	margin-bottom: 4px;
+	}
+
+#news_nav {
+	float: right; 
+	text-align: left; 
+	border-left: 1px solid #E5E5E5;/*news nav border*/
+	font-size: 10px; 
+	width: 125px; 
+	margin-top: 10px;
+	}
+
+#news_nav ul {
+	list-style: none; 
+	margin: 0px; 
+	padding: 0px; 
+	font-size: 11px; 
+	line-height: normal; 
+	color: #333333;/*news nav links*/
+	}
+
+#news_nav ul li {
+	padding: 0px 0px 0px 5px; 
+	background-image: none;
+	}
+
+#news_nav li a:link, #news_nav li a:visited {
+	margin: 0px; 
+	text-decoration: none; 
+	line-height: 16px; 
+	font-weight: normal;
+	}
+
+#news_nav li a:hover {
+	color: #999999;/*news nav link rollover*/
+	}
+
+#news_nav ul ul li {
+	padding-left: 15px;
+	}
+
+#news {
+	margin-right: 150px; 
+	height: 1%;
+	}
+
+#news .image {
+	border: 1px solid #CCCCCC;/*news image border*/ 
+	float: left; 
+	margin: 3px 8px 8px 0px;
+	}
+
+#news hr {
+	border: 0px; 
+	border-bottom: 1px solid #E5E5E5;/*news divide line*/  
+	height: 0px; 
+	clear: left; 
+	margin: 0px 0px 10px 0px!important; margin: 0px 0px 0px 0px; 
+	padding: 10px 0px 0px 0px;
+	}
+
+.pagecount {
+	text-align: right; 
+	margin: 0px; 
+	padding: 10px 0px 0px 0px;
+	}
+
+.category {
+	padding-top: 15px; 
+	font-size: 10px;
+	}
+
+
+/* Tables */
+table, tr, td {
+	font-family: Arial, Tahoma, sans-serif; 
+	font-size: 11px;
+	}
+
+table {
+	border-collapse: collapse; 
+	margin: 10px 0px 10px 0px;
+	}
+
+td {
+	text-align: left; 
+	padding: 5px; 
+	border: 1px solid #999999;/*table cell border*/
+	}
+
+th {
+	font-weight: bold; 
+	text-align: left; 
+	padding: 10px 5px 10px 5px; 
+	border: 1px solid #999999;/*table cell border*/
+	}

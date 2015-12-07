@@ -1,0 +1,4 @@
+<h1><%= @page_title = "Update #{@dm_one['singular'].capitalize}" -%></h1>
+<% render :partial => "subnav" %>
+
+      <%= render :partial => 'form', :locals => {:article => @article} %>
